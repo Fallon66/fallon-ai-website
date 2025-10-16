@@ -17,8 +17,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center" style={{ padding: '20px 0' }}>
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <span className="text-4xl">🐙</span>
-            <span className="text-xl md:text-2xl font-bold text-fallon-teal">Fallon AI</span>
+            <img src="/logo.png" alt="Fallon AI" className="h-10 md:h-12 w-auto" />
+            <span className="text-xl md:text-2xl font-bold text-gray-900">Fallon AI</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
@@ -40,7 +40,7 @@ export default function Navigation() {
             >
               FAQ
             </button>
-            <button className="bg-fallon-teal text-white px-6 py-2.5 rounded-lg font-medium hover:bg-opacity-90 transition-all hover:shadow-lg">
+            <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 py-2.5 rounded-lg font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
               Book Discovery Call
             </button>
           </div>
@@ -75,7 +75,7 @@ export default function Navigation() {
             >
               FAQ
             </button>
-            <button className="w-full bg-fallon-teal text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all">
+            <button className="w-full bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 py-3 rounded-lg font-bold hover:shadow-2xl transition-all duration-300">
               Book Discovery Call
             </button>
           </div>
