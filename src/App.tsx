@@ -6,6 +6,7 @@ import HowWeWork from './components/HowWeWork';
 import Stats from './components/Stats';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Stats />
       <FAQ />
       <FinalCTA />
+      <Footer />
     </div>
   );
 }
