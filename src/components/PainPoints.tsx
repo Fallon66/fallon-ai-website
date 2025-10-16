@@ -66,7 +66,7 @@ export default function PainPoints() {
 
           <div className="mt-12 pt-8 border-t-2 border-gray-100 flex items-center justify-center space-x-3 group cursor-pointer">
             <p className="text-2xl font-semibold text-fallon-teal">
-              Let's fix all of this in 5 days
+              Let's fix all of this together
             </p>
             <ArrowRight className="text-fallon-teal group-hover:translate-x-2 transition-transform" size={28} />
           </div>

@@ -11,8 +11,8 @@ export default function FAQ() {
 
   const faqs: FAQItem[] = [
     {
-      question: 'What exactly happens in the 5 days?',
-      answer: "Day 1: We audit your workflow and identify what's draining your time. Day 2-4: We build and test your custom AI systems. Day 5: We train you to use them. By the end, you're automated, not overwhelmed.",
+      question: 'How does the process work?',
+      answer: "First, we audit your workflow and identify what's draining your time. Then we build and test your custom AI systems. Finally, we train you to use them. By the end, you're automated, not overwhelmed.",
     },
     {
       question: 'Do I need to be technical to use this?',
@@ -31,7 +31,7 @@ export default function FAQ() {
       answer: "Absolutely. We use enterprise-grade tools with bank-level encryption. Your data stays yours, and we never access anything without your explicit permission. We can walk you through our security practices on the discovery call.",
     },
     {
-      question: 'What if I get stuck after the 5 days?',
+      question: 'What if I get stuck after the project?',
       answer: "You won't be left hanging! Every project includes documentation tailored to your system, plus follow-up support. We also offer ongoing support packages if you want someone in your corner as you scale.",
     },
     {
@@ -44,7 +44,7 @@ export default function FAQ() {
     },
     {
       question: 'What makes you different from other AI consultants?',
-      answer: "Two things: Speed and practicality. We don't do 3-month discovery phases or theoretical frameworks. We build real systems that work in 5 days, and we only automate tasks that genuinely make your life easier. No fluff, no jargon, just results.",
+      answer: "Two things: Speed and practicality. We don't do 3-month discovery phases or theoretical frameworks. We build real systems that work fast, and we only automate tasks that genuinely make your life easier. No fluff, no jargon, just results.",
     },
   ];
 

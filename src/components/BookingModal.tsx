@@ -49,7 +49,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 Book Your Discovery Call
               </h2>
               <p className="text-white/90 text-sm sm:text-base md:text-lg hidden sm:block">
-                Let's talk about getting your time back in 5 days
+                Let's talk about getting your time back
               </p>
             </div>
           </div>

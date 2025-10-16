@@ -10,7 +10,7 @@ export default function Services() {
       icon: Mail,
       emoji: '📧',
       title: 'Email Automation',
-      description: 'From 3,500+ unread emails to inbox zero in 5 days. No more drowning.',
+      description: 'From 3,500+ unread emails to inbox zero. AI triage that actually works.',
       color: 'from-fallon-teal to-fallon-lavender',
       bgPattern: 'teal',
     },

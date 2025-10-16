@@ -18,7 +18,7 @@ export default function HowWeWork() {
       icon: Rocket,
       number: '3',
       title: 'Launch',
-      description: '5-day transformation. We build it, test it, and teach you to use it.',
+      description: 'Fast transformation. We build it, test it, and teach you to use it.',
     },
   ];
 

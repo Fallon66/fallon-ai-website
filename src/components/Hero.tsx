@@ -51,7 +51,7 @@ export default function Hero() {
           <span className="font-bold text-gray-900"> Chaos</span> to <span className="font-bold text-gray-900">clarity.</span>
           {' '}
           <span className="block mt-3 sm:mt-4 font-semibold text-fallon-teal text-xl sm:text-2xl md:text-3xl">
-            Get your life back in 5 days with AI that actually works.
+            AI automation that actually works for your brain.
           </span>
         </p>
 
