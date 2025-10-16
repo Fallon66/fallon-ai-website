@@ -30,25 +30,25 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
       {/* Modal */}
       <div
-        className="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden"
+        className="relative bg-white rounded-2xl md:rounded-3xl shadow-2xl w-full max-w-4xl max-h-[85vh] md:max-h-[90vh] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral p-6 relative">
+        <div className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral p-3 sm:p-4 md:p-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-300 hover:scale-110"
+            className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 bg-white/20 hover:bg-white/30 rounded-full p-1.5 sm:p-2 transition-all duration-300 hover:scale-110"
           >
-            <X size={24} className="text-white" />
+            <X size={20} className="text-white sm:w-6 sm:h-6" />
           </button>
 
-          <div className="flex items-center space-x-4">
-            <div className="text-5xl">🐙</div>
+          <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+            <div className="text-3xl sm:text-4xl md:text-5xl">🐙</div>
             <div>
-              <h2 className="text-3xl font-bold text-white mb-1">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-0.5 sm:mb-1">
                 Book Your Discovery Call
               </h2>
-              <p className="text-white/90 text-lg">
+              <p className="text-white/90 text-sm sm:text-base md:text-lg hidden sm:block">
                 Let's talk about getting your time back in 5 days
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
         </div>
 
         {/* Cal.com Embed */}
-        <div className="bg-white overflow-auto" style={{ height: '600px' }}>
+        <div className="bg-white overflow-auto" style={{ height: 'calc(85vh - 100px)', maxHeight: '550px' }}>
           <iframe
             src="https://cal.com/charlotte-fallon-smith-m1mwul/30min?embed=true"
             width="100%"

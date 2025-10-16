@@ -16,10 +16,10 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50" style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-2 sm:py-3 md:py-4">
           <div className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="/logo.png" alt="Fallon AI" className="h-24 md:h-28 lg:h-32 w-auto max-w-md" />
+            <img src="/logo.png" alt="Fallon AI" className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto max-w-md" />
           </div>
 
           <div className="hidden md:flex items-center space-x-8 lg:space-x-12">

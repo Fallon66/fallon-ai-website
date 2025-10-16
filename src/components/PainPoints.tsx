@@ -9,13 +9,13 @@ export default function PainPoints() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-fallon-coral/10 via-white to-fallon-lavender/10">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-fallon-coral/10 via-white to-fallon-lavender/10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-900 mb-8 sm:mb-10 md:mb-12">
           Is This You?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {painPoints.map((point, index) => {
             const Icon = point.icon;
             const parts = point.text.split(point.highlight);
@@ -42,8 +42,8 @@ export default function PainPoints() {
           })}
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border-2 border-gray-100 mt-8">
-          <div className="space-y-4">
+        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 border-2 border-gray-100 mt-6 sm:mt-8">
+          <div className="space-y-3 sm:space-y-4">
             <div className="flex items-center space-x-3">
               <Check className="text-fallon-teal flex-shrink-0" size={28} />
               <p className="text-xl text-gray-700 leading-relaxed">
