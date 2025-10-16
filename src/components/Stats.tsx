@@ -37,15 +37,15 @@ export default function Stats() {
               className="text-center group hover:scale-105 transition-all duration-300 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl"
             >
               <div
-                className={`font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-4`}
-                style={{ fontSize: '120px', lineHeight: '1', textShadow: '0 4px 12px rgba(125, 211, 192, 0.3)' }}
+                className={`font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-3 sm:mb-4`}
+                style={{ fontSize: 'clamp(60px, 15vw, 120px)', lineHeight: '1', textShadow: '0 4px 12px rgba(125, 211, 192, 0.3)' }}
               >
                 {stat.value}
               </div>
-              <div className="text-2xl text-gray-900 font-semibold mb-2">
+              <div className="text-xl sm:text-2xl text-gray-900 font-semibold mb-2">
                 {stat.label}
               </div>
-              <div className="text-lg text-gray-600">
+              <div className="text-base sm:text-lg text-gray-600">
                 {stat.subtitle}
               </div>
             </div>

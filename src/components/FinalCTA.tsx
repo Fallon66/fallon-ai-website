@@ -16,17 +16,17 @@ export default function FinalCTA() {
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
           Ready to <span className="font-extrabold">stop drowning</span>?
         </h2>
 
-        <p className="text-xl md:text-2xl text-white mb-10 leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
-          <span className="font-bold">One call.</span> <span className="font-bold">One week.</span> <span className="font-bold text-2xl md:text-3xl">Complete transformation.</span>
+        <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 sm:mb-10 leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
+          <span className="font-bold">One call.</span> <span className="font-bold">One week.</span> <span className="font-bold text-xl sm:text-2xl md:text-3xl">Complete transformation.</span>
         </p>
 
         <button
           onClick={() => setIsBookingOpen(true)}
-          className="bg-white text-fallon-teal px-14 py-6 rounded-lg text-2xl font-bold hover:bg-gray-50 transition-all hover:shadow-2xl transform animate-pulse-button"
+          className="bg-white text-fallon-teal px-8 sm:px-10 md:px-14 py-4 sm:py-5 md:py-6 rounded-lg text-xl sm:text-2xl font-bold hover:bg-gray-50 transition-all hover:shadow-2xl transform animate-pulse-button"
           style={{ boxShadow: '0 8px 20px rgba(0,0,0,0.3)' }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'scale(1.1)';

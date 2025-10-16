@@ -40,32 +40,24 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center z-10">
-        {/* Octopus Icon with Glow */}
-        <div className="mb-8 inline-block">
-          <div className="text-7xl sm:text-8xl animate-bounce-slow relative">
-            🐙
-            <div className="absolute inset-0 blur-2xl bg-fallon-teal/30 animate-pulse"></div>
-          </div>
-        </div>
-
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-8 leading-tight">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 text-center z-10">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
           Stop drowning in busywork. <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent animate-gradient-text">Start living.</span>
         </h1>
 
-        <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed">
           <span className="font-bold text-gray-900">Thousands of unorganised emails</span> to a system that actually works.
           <span className="font-bold text-gray-900"> Random AI experiments</span> to real automation.
           <span className="font-bold text-gray-900"> Chaos</span> to <span className="font-bold text-gray-900">clarity.</span>
           {' '}
-          <span className="block mt-4 font-semibold text-fallon-teal text-2xl sm:text-3xl">
+          <span className="block mt-3 sm:mt-4 font-semibold text-fallon-teal text-xl sm:text-2xl md:text-3xl">
             Get your life back in 5 days with AI that actually works.
           </span>
         </p>
 
         <button
           onClick={() => setIsBookingOpen(true)}
-          className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle"
+          className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle"
         >
           Book Discovery Call →
         </button>
@@ -109,11 +101,6 @@ export default function Hero() {
           50% { transform: translateY(-25px) translateX(5px); }
         }
 
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-        }
-
         @keyframes gradient-text {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
@@ -150,10 +137,6 @@ export default function Hero() {
 
         .animate-float-slow {
           animation: float-slow 10s ease-in-out infinite;
-        }
-
-        .animate-bounce-slow {
-          animation: bounce-slow 3s ease-in-out infinite;
         }
 
         .animate-gradient-text {
