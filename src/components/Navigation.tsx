@@ -16,9 +16,9 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 bg-white z-50" style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center" style={{ padding: '20px 0' }}>
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="/logo.png" alt="Fallon AI" className="h-10 md:h-12 w-auto" />
-            <span className="text-xl md:text-2xl font-bold text-gray-900">Fallon AI</span>
+          <div className="flex items-center space-x-4 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <img src="/logo.png" alt="Fallon AI" className="h-16 md:h-20 w-auto" />
+            <span className="text-2xl md:text-3xl font-bold text-gray-900">Fallon AI</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
