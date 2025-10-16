@@ -80,14 +80,9 @@ export default function Services() {
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500 transform translate-x-16 -translate-y-16 group-hover:translate-x-8 group-hover:-translate-y-8`}></div>
 
                 <div className="relative z-10">
-                  {/* Big Emoji */}
-                  <div className="text-6xl mb-6 inline-block transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                    {service.emoji}
-                  </div>
-
                   {/* Icon Badge */}
-                  <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <Icon size={28} />
+                  <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <Icon size={40} />
                   </div>
 
                   <h3 className="text-3xl font-bold text-gray-900 mb-4 group-hover:text-fallon-teal transition-colors">

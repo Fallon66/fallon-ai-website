@@ -32,24 +32,7 @@ export default function HowWeWork() {
           Simple, fast, and designed around your actual life.
         </p>
 
-        <div className="relative">
-          <div className="hidden md:block absolute top-24 left-0 right-0 h-1 z-0">
-            <div className="max-w-4xl mx-auto px-32 relative">
-              <svg className="w-full h-8" viewBox="0 0 100 20" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style={{ stopColor: '#7DD3C0', stopOpacity: 1 }} />
-                    <stop offset="50%" style={{ stopColor: '#C5B9E0', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#FFB4A2', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M 0,10 Q 25,5 50,10 T 100,10" stroke="url(#lineGradient)" strokeWidth="2" fill="none" />
-                <polygon points="98,8 100,10 98,12" fill="#FFB4A2" />
-              </svg>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
@@ -85,7 +68,6 @@ export default function HowWeWork() {
                 </div>
               );
             })}
-          </div>
         </div>
       </div>
     </section>

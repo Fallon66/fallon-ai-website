@@ -36,7 +36,6 @@ export default function Stats() {
               key={index}
               className="text-center group hover:scale-105 transition-all duration-300 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl"
             >
-              <div className="text-5xl mb-4">{stat.icon}</div>
               <div
                 className={`font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-4`}
                 style={{ fontSize: '120px', lineHeight: '1', textShadow: '0 4px 12px rgba(125, 211, 192, 0.3)' }}
