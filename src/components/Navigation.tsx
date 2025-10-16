@@ -20,26 +20,26 @@ export default function Navigation() {
             <img src="/logo.png" alt="Fallon AI" className="h-24 md:h-28 lg:h-32 w-auto max-w-md" />
           </div>
 
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
             <button
               onClick={() => scrollToSection('services')}
-              className="text-lg lg:text-xl text-gray-700 hover:text-fallon-teal transition-colors font-semibold"
+              className="text-xl text-gray-900 hover:text-fallon-teal transition-colors font-bold"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('how-it-works')}
-              className="text-lg lg:text-xl text-gray-700 hover:text-fallon-teal transition-colors font-semibold"
+              className="text-xl text-gray-900 hover:text-fallon-teal transition-colors font-bold"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection('faq')}
-              className="text-lg lg:text-xl text-gray-700 hover:text-fallon-teal transition-colors font-semibold"
+              className="text-xl text-gray-900 hover:text-fallon-teal transition-colors font-bold"
             >
               FAQ
             </button>
-            <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 py-3 rounded-lg text-lg font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+            <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-10 py-3.5 rounded-lg text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
               Book Discovery Call
             </button>
           </div>
