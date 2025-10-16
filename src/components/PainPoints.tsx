@@ -1,11 +1,11 @@
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Chrome, Mail, Clock, Briefcase } from 'lucide-react';
 
 export default function PainPoints() {
   const painPoints = [
-    'You have 47 browser tabs open right now',
-    'Your inbox is a graveyard of good intentions',
-    "You've said 'I'll do it later' 5 times today",
-    'LinkedIn feels like homework',
+    { text: 'You have 47 browser tabs open right now', icon: Chrome, highlight: '47 browser tabs' },
+    { text: 'Your inbox is a graveyard of good intentions', icon: Mail, highlight: 'graveyard of good intentions' },
+    { text: "You've said 'I'll do it later' 5 times today", icon: Clock, highlight: "'I'll do it later' 5 times" },
+    { text: 'LinkedIn feels like homework', icon: Briefcase, highlight: 'feels like homework' },
   ];
 
   return (
@@ -15,21 +15,53 @@ export default function PainPoints() {
           Is This You?
         </h2>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 border-gray-100">
-          <div className="space-y-6">
-            {painPoints.map((point, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {painPoints.map((point, index) => {
+            const Icon = point.icon;
+            const parts = point.text.split(point.highlight);
+            return (
               <div
                 key={index}
-                className="flex items-start space-x-4 group"
+                className="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-100 hover:border-fallon-coral hover:shadow-xl transition-all duration-300"
+                style={{ lineHeight: '1.8' }}
               >
-                <div className="flex-shrink-0 w-7 h-7 rounded-md bg-fallon-coral/20 flex items-center justify-center group-hover:bg-fallon-coral transition-colors">
-                  <Check className="text-fallon-coral group-hover:text-white transition-colors" size={18} />
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-fallon-coral/20 to-fallon-lavender/20 flex items-center justify-center">
+                    <Icon className="text-fallon-coral" size={24} />
+                  </div>
+                  <p className="text-xl text-gray-700 leading-relaxed flex-1 pt-2">
+                    {parts[0]}
+                    <span className="font-semibold bg-fallon-teal/20 px-1 rounded">
+                      {point.highlight}
+                    </span>
+                    {parts[1]}
+                  </p>
                 </div>
-                <p className="text-xl text-gray-700 leading-relaxed flex-1">
-                  {point}
-                </p>
               </div>
-            ))}
+            );
+          })}
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 border-2 border-gray-100 mt-8">
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <Check className="text-fallon-teal flex-shrink-0" size={28} />
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Spending <span className="font-bold text-gray-900">3 hours a day</span> on emails that could be automated
+              </p>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Check className="text-fallon-teal flex-shrink-0" size={28} />
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Drowning in <span className="font-bold text-gray-900">AI tools and courses</span> but not using any of them
+              </p>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Check className="text-fallon-teal flex-shrink-0" size={28} />
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Your brain is <span className="font-bold text-gray-900">overloaded</span> with tasks, ideas, and reminders
+              </p>
+            </div>
           </div>
 
           <div className="mt-12 pt-8 border-t-2 border-gray-100 flex items-center justify-center space-x-3 group cursor-pointer">

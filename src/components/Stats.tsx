@@ -1,19 +1,25 @@
 export default function Stats() {
   const stats = [
     {
-      value: '99.5%',
-      label: 'Email Gone',
+      value: '5',
+      label: 'Days to Your First AI System',
+      subtitle: 'From chaos to clarity, faster than you think',
       gradient: 'from-fallon-teal to-fallon-lavender',
+      icon: '⚡',
     },
     {
-      value: '57',
-      label: 'Systems Built',
-      gradient: 'from-fallon-coral to-fallon-teal',
-    },
-    {
-      value: '5 Days',
-      label: 'to Freedom',
+      value: '100%',
+      label: 'Built in Public',
+      subtitle: 'Every step documented, transparent process',
       gradient: 'from-fallon-lavender to-fallon-coral',
+      icon: '📖',
+    },
+    {
+      value: '3+',
+      label: 'Hours Saved Daily',
+      subtitle: 'Time back for what actually matters',
+      gradient: 'from-fallon-coral to-fallon-teal',
+      icon: '⏰',
     },
   ];
 
@@ -28,13 +34,20 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center group hover:scale-110 transition-transform duration-300"
+              className="text-center group hover:scale-105 transition-all duration-300 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl"
             >
-              <div className={`text-6xl md:text-7xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-4`}>
+              <div className="text-5xl mb-4">{stat.icon}</div>
+              <div
+                className={`font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-4`}
+                style={{ fontSize: '120px', lineHeight: '1', textShadow: '0 4px 12px rgba(125, 211, 192, 0.3)' }}
+              >
                 {stat.value}
               </div>
-              <div className="text-xl md:text-2xl text-gray-700 font-medium">
+              <div className="text-2xl text-gray-900 font-semibold mb-2">
                 {stat.label}
+              </div>
+              <div className="text-lg text-gray-600">
+                {stat.subtitle}
               </div>
             </div>
           ))}
