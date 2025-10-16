@@ -17,7 +17,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="/logo.png" alt="Fallon AI" className="h-16 md:h-20 lg:h-24 w-auto" />
+            <img src="/logo.png" alt="Fallon AI" className="h-24 md:h-28 lg:h-32 w-auto max-w-md" />
           </div>
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
