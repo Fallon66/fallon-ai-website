@@ -13,12 +13,12 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
+    <nav className="fixed top-0 left-0 right-0 bg-white z-50" style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center" style={{ padding: '20px 0' }}>
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <span className="text-3xl">🐙</span>
-            <span className="text-xl md:text-2xl font-semibold text-gray-900">Fallon AI</span>
+            <span className="text-4xl" style={{ fontSize: '1.5em' }}>🐙</span>
+            <span className="text-xl md:text-2xl font-bold" style={{ color: '#7DD3C0' }}>Fallon AI</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
