@@ -4,6 +4,7 @@ import Services from './components/Services';
 import PainPoints from './components/PainPoints';
 import HowWeWork from './components/HowWeWork';
 import Stats from './components/Stats';
+import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <PainPoints />
       <HowWeWork />
       <Stats />
+      <FAQ />
       <FinalCTA />
     </div>
   );

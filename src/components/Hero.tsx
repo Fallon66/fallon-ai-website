@@ -9,17 +9,16 @@ export default function Hero() {
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-          What's the one task you'd love to{' '}
+          Stop drowning in busywork.{' '}
           <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">
-            never do again?
+            Start living.
           </span>
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed">
-          From 200+ emails to inbox zero. From LinkedIn ghost to thought leader.
-          From chaos to clarity.{' '}
+          200+ emails to inbox zero. LinkedIn ghost to thought leader. Chaos to clarity.{' '}
           <span className="font-semibold text-fallon-teal">
-            All in 5 days with AI that actually works.
+            Get your life back in 5 days with AI that actually works.
           </span>
         </p>
 
