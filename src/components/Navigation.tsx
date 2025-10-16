@@ -15,31 +15,31 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50" style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center" style={{ padding: '20px 0' }}>
+        <div className="flex justify-between items-center py-4">
           <div className="cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="/logo.png" alt="Fallon AI" className="h-32 md:h-40 w-auto" />
+            <img src="/logo.png" alt="Fallon AI" className="h-16 md:h-20 lg:h-24 w-auto" />
           </div>
 
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <button
               onClick={() => scrollToSection('services')}
-              className="text-gray-700 hover:text-fallon-teal transition-colors font-medium"
+              className="text-lg lg:text-xl text-gray-700 hover:text-fallon-teal transition-colors font-semibold"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('how-it-works')}
-              className="text-gray-700 hover:text-fallon-teal transition-colors font-medium"
+              className="text-lg lg:text-xl text-gray-700 hover:text-fallon-teal transition-colors font-semibold"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection('faq')}
-              className="text-gray-700 hover:text-fallon-teal transition-colors font-medium"
+              className="text-lg lg:text-xl text-gray-700 hover:text-fallon-teal transition-colors font-semibold"
             >
               FAQ
             </button>
-            <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 py-2.5 rounded-lg font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+            <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 py-3 rounded-lg text-lg font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
               Book Discovery Call
             </button>
           </div>
@@ -58,23 +58,23 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-3">
             <button
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('how-it-works')}
-              className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection('faq')}
-              className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
             >
               FAQ
             </button>
-            <button className="w-full bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 py-3 rounded-lg font-bold hover:shadow-2xl transition-all duration-300">
+            <button className="w-full bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 py-3 rounded-lg text-lg font-bold hover:shadow-2xl transition-all duration-300">
               Book Discovery Call
             </button>
           </div>
