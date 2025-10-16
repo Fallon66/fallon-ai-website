@@ -44,14 +44,11 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-8 leading-tight">
-          Stop drowning in busywork.{' '}
-          <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent animate-gradient-text">
-            Start living.
-          </span>
+          Stop drowning in busywork. <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent animate-gradient-text">Start living.</span>
         </h1>
 
         <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed">
-          <span className="font-bold text-gray-900">Thousands of unorganized emails</span> to a system that actually works.
+          <span className="font-bold text-gray-900">Thousands of unorganised emails</span> to a system that actually works.
           <span className="font-bold text-gray-900"> Random AI experiments</span> to real automation.
           <span className="font-bold text-gray-900"> Chaos</span> to <span className="font-bold text-gray-900">clarity.</span>
           {' '}
