@@ -6,7 +6,9 @@ Stop drowning in busywork. Get your life back in 5 days with AI that actually wo
 
 ## 🚀 About This Project
 
-Fallon AI helps entrepreneurs and executives reclaim 3+ hours daily through custom AI automation. From inbox zero to LinkedIn magic, we build AI systems that actually work - in 5 days.
+**Note:** *This site was built as a proof-of-concept to test what's possible building entirely with AI tools (Claude Code). Built in public to demonstrate the capabilities of AI-assisted development.*
+
+Fallon AI explores custom AI automation for entrepreneurs and executives - helping reclaim time spent on repetitive tasks. From inbox management to LinkedIn engagement, this project investigates AI systems that actually work.
 
 This landing page was built in public as part of my journey learning web development and AI automation. Built with modern tools, deployed professionally, and fully functional.
 
