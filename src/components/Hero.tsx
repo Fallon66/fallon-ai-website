@@ -1,5 +1,11 @@
+import { useState } from 'react';
+import BookingModal from './BookingModal';
+
 export default function Hero() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
+    <>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-fallon-teal/20 via-fallon-lavender/15 to-fallon-coral/20 animate-gradient"></div>
@@ -57,7 +63,10 @@ export default function Hero() {
           </span>
         </p>
 
-        <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle">
+        <button
+          onClick={() => setIsBookingOpen(true)}
+          className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle"
+        >
           Book Discovery Call →
         </button>
 
@@ -157,5 +166,8 @@ export default function Hero() {
         }
       `}</style>
     </section>
+
+    <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+    </>
   );
 }

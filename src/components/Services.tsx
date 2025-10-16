@@ -1,6 +1,10 @@
 import { Mail, Briefcase, Zap, Brain, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
+import BookingModal from './BookingModal';
 
 export default function Services() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   const services = [
     {
       icon: Mail,
@@ -37,6 +41,7 @@ export default function Services() {
   ];
 
   return (
+    <>
     <section id="services" className="py-24 bg-gradient-to-br from-white via-fallon-teal/5 to-white relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
@@ -113,7 +118,10 @@ export default function Services() {
               Ready to reclaim <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">3+ hours every day?</span>
             </p>
 
-            <button className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle inline-flex items-center space-x-3">
+            <button
+              onClick={() => setIsBookingOpen(true)}
+              className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle inline-flex items-center space-x-3"
+            >
               <span>Let's Talk About Your Biggest Time-Drain</span>
               <ArrowRight size={24} />
             </button>
@@ -163,5 +171,8 @@ export default function Services() {
         }
       `}</style>
     </section>
+
+    <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+    </>
   );
 }

@@ -1,5 +1,11 @@
+import { useState } from 'react';
+import BookingModal from './BookingModal';
+
 export default function FinalCTA() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
+    <>
     <section className="py-24 bg-gradient-to-br from-fallon-teal via-fallon-lavender to-fallon-coral relative overflow-hidden">
       <div className="absolute inset-0 bg-black/30"></div>
 
@@ -19,6 +25,7 @@ export default function FinalCTA() {
         </p>
 
         <button
+          onClick={() => setIsBookingOpen(true)}
           className="bg-white text-fallon-teal px-14 py-6 rounded-lg text-2xl font-bold hover:bg-gray-50 transition-all hover:shadow-2xl transform animate-pulse-button"
           style={{ boxShadow: '0 8px 20px rgba(0,0,0,0.3)' }}
           onMouseEnter={(e) => {
@@ -52,5 +59,8 @@ export default function FinalCTA() {
         }
       `}</style>
     </section>
+
+    <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+    </>
   );
 }
