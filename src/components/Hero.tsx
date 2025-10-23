@@ -57,14 +57,17 @@ export default function Hero() {
 
         <button
           onClick={() => setIsBookingOpen(true)}
-          className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle"
+          className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 rounded-xl text-lg sm:text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle hover:from-fallon-teal/90 hover:to-fallon-lavender/90 active:scale-95"
         >
-          Book Discovery Call →
+          Join Free Pilot Program (10 Slots) →
         </button>
 
         {/* Trust Indicator */}
-        <p className="mt-8 text-sm text-gray-600">
-          🔒 No commitment. No pressure. Just 30 minutes to see if we're a fit.
+        <p className="mt-6 text-base sm:text-lg text-gray-700 font-medium">
+          Free 1-hour call + custom AI roadmap. No charge while I prove this works.
+        </p>
+        <p className="mt-2 text-sm text-gray-600">
+          🔒 No commitment. No pressure. Just honest conversation about what you need.
         </p>
       </div>
 

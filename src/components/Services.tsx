@@ -7,36 +7,20 @@ export default function Services() {
 
   const services = [
     {
-      icon: Mail,
-      emoji: '📧',
-      title: 'Email Automation',
-      description: 'From 3,500+ unread emails to inbox zero. AI triage that actually works.',
+      icon: Brain,
+      emoji: '🧠',
+      title: 'Personal Chaos → Clarity',
+      description: 'Email triage systems • ADHD-friendly automation • Custom productivity workflows',
       color: 'from-fallon-teal to-fallon-lavender',
       bgPattern: 'teal',
     },
     {
-      icon: Briefcase,
-      emoji: '💼',
-      title: 'LinkedIn Magic',
-      description: 'Post consistently, engage strategically, build your personal brand without the overwhelm.',
-      color: 'from-fallon-lavender to-fallon-coral',
-      bgPattern: 'lavender',
-    },
-    {
       icon: Zap,
       emoji: '⚡',
-      title: 'AI Superpowers',
-      description: 'From AI-curious to AI-powered. Custom tools that actually save you hours every week.',
-      color: 'from-fallon-coral to-fallon-teal',
-      bgPattern: 'coral',
-    },
-    {
-      icon: Brain,
-      emoji: '🧠',
-      title: 'Brain Organisation',
-      description: 'Capture everything, find anything, never lose another brilliant idea again.',
-      color: 'from-fallon-teal via-fallon-lavender to-fallon-coral',
-      bgPattern: 'mixed',
+      title: 'Business Automation',
+      description: 'Lead generation systems • Content workflows • Team automation',
+      color: 'from-fallon-lavender to-fallon-coral',
+      bgPattern: 'lavender',
     },
   ];
 
@@ -52,10 +36,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
-            We'll Handle The Stuff <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent">You Hate</span>
+            What I'm Testing <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent">(Free Pilots)</span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Stop wasting time on tasks that drain your energy. <span className="font-semibold text-gray-900">Let AI handle the boring stuff.</span>
+            All pilots are <span className="font-bold text-gray-900">FREE</span> while I refine the process. <span className="font-semibold text-gray-900">You get custom AI systems. I get real-world feedback. Win-win.</span>
           </p>
         </div>
 
@@ -114,20 +98,23 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-br from-fallon-teal/5 to-fallon-coral/5 animate-gradient"></div>
 
           <div className="relative z-10">
-            <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-              Ready to reclaim <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">3+ hours every day?</span>
+            <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Want a <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">free AI system</span> built just for you?
+            </p>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              All pilots are FREE while I prove this works. You get custom automation. I get feedback. Win-win.
             </p>
 
             <button
               onClick={() => setIsBookingOpen(true)}
               className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle inline-flex items-center space-x-3"
             >
-              <span>Let's Talk About Your Biggest Time-Drain</span>
+              <span>Join Free Pilot Program (10 Slots)</span>
               <ArrowRight size={24} />
             </button>
 
             <p className="mt-6 text-gray-600">
-              🔒 Free 30-minute discovery call • No commitment required
+              🔒 Free 1-hour call + custom roadmap • No charge, no catch
             </p>
           </div>
         </div>

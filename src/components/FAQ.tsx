@@ -11,40 +11,36 @@ export default function FAQ() {
 
   const faqs: FAQItem[] = [
     {
-      question: 'How does the process work?',
-      answer: "First, we audit your workflow and identify what's draining your time. Then we build and test your custom AI systems. Finally, we train you to use them. By the end, you're automated, not overwhelmed.",
+      question: "What's this free pilot program?",
+      answer: "I'm testing AI automation systems with 10 real people before I charge for anything. You get a 1-hour call, custom recommendations, and an AI roadmap built for YOUR brain. I get feedback on what actually works. It's genuinely free - no catch, no upsell."
     },
     {
-      question: 'Do I need to be technical to use this?',
-      answer: "Not at all. If you can use email and LinkedIn, you can use our AI systems. We build everything for you, then show you exactly how to use it. No coding, no complexity, just results.",
+      question: "Why would you do this for free?",
+      answer: "Because I'm not selling theory. I built these systems for myself (cleared 20k emails in 5 days, automated my entire workflow). Now I want to prove they work for others before I ask anyone to pay. Call it quality control."
     },
     {
-      question: 'How much does it cost?',
-      answer: "Every project is different because every business is different. During your discovery call, we'll discuss your specific needs and provide a custom quote. Most clients see ROI within the first month from time saved alone.",
+      question: "I have ADHD. Will this actually work for my brain?",
+      answer: "YES. I'm ADHD, autistic, and dyslexic. Every system I build is designed for neurodivergent brains first. Short steps, visual cues, zero overwhelm. If it doesn't work for me, I don't build it for you."
     },
     {
-      question: 'What if I don\'t know what I need?',
-      answer: "That's what the discovery call is for! Most clients start with \"I'm drowning in emails\" or \"I know AI could help but I don't know where to start.\" We'll help you identify the biggest time-drains and prioritize what to automate first.",
+      question: "What happens after the pilot?",
+      answer: "You keep everything we build. Forever. If I start charging for this service later, you'll get first dibs and pilot pricing. But there's zero obligation."
     },
     {
-      question: 'Is my data safe?',
-      answer: "Absolutely. We use enterprise-grade tools with bank-level encryption. Your data stays yours, and we never access anything without your explicit permission. We can walk you through our security practices on the discovery call.",
+      question: "Do I need to be technical?",
+      answer: "Not even a little. If you can use email and LinkedIn, you can use what I build. I handle the complexity. You just use it."
     },
     {
-      question: 'What if I get stuck after the project?',
-      answer: "You won't be left hanging! Every project includes documentation tailored to your system, plus follow-up support. We also offer ongoing support packages if you want someone in your corner as you scale.",
+      question: "How do I know if I'm a fit?",
+      answer: "If you're drowning in admin, know AI could help but don't know where to start, and you're willing to give honest feedback - you're a fit. Bonus points if you're neurodivergent (my specialty)."
     },
     {
-      question: 'Can\'t I just use ChatGPT myself?',
-      answer: "You absolutely could - if you had 40+ hours to research tools, test integrations, debug workflows, and figure out what actually works. Our clients come to us because they'd rather spend those 40 hours running their business.",
+      question: "What if I don't know what I need?",
+      answer: "That's normal! Most people can't articulate 'I need automated email triage with 3-tier urgency flags.' They just know they're drowning. The discovery call helps me extract what's actually eating your time."
     },
     {
-      question: 'Who is this NOT for?',
-      answer: "If you're happy spending hours on admin tasks, or if you prefer doing everything manually, we're probably not a fit. This is for business owners and professionals who value their time and are ready to work smarter, not harder.",
-    },
-    {
-      question: 'What makes you different from other AI consultants?',
-      answer: "Two things: Speed and practicality. We don't do 3-month discovery phases or theoretical frameworks. We build real systems that work fast, and we only automate tasks that genuinely make your life easier. No fluff, no jargon, just results.",
+      question: "Is my data safe?",
+      answer: "Yes. I use paid Claude Pro (not free ChatGPT). Your data isn't used for training. For highly sensitive work, I can set up isolated private AI systems. But honestly? Most automation doesn't need your sensitive data at all."
     },
   ];
 
@@ -53,10 +49,10 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Questions? We've Got Answers.
+            What You're Probably Wondering
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about working with us.
+            Honest answers about the free pilot program.
           </p>
         </div>
 
