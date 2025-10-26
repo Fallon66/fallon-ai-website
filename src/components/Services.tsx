@@ -127,11 +127,13 @@ export default function Services() {
 
                 <div className="relative z-10 flex flex-col flex-1">
                   {/* Badge */}
-                  {service.badge && (
-                    <div className={`inline-block ${service.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full mb-4`}>
-                      {service.badge}
-                    </div>
-                  )}
+                  <div className="mb-4 h-6 flex items-start">
+                    {service.badge && (
+                      <div className={`inline-block ${service.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full w-auto`}>
+                        {service.badge}
+                      </div>
+                    )}
+                  </div>
 
                   {/* Icon Badge */}
                   <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
