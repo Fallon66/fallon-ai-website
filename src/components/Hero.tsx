@@ -49,10 +49,6 @@ export default function Hero() {
         {/* CRO: Specific value proposition with clarity on what's different */}
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed">
           Custom AI systems for overwhelmed founders and businesses drowning in repetitive tasks.
-          {' '}
-          <span className="block mt-3 sm:mt-4 font-semibold text-fallon-teal text-xl sm:text-2xl md:text-3xl">
-            8-figure co-founder (exited 2020), Fractional CMO/COO, AI since 2015. Designed for neurodivergent brains, works for everyone.
-          </span>
         </p>
 
         {/* CRO: Clear primary and secondary CTAs, mobile-optimized button sizes (min 44px height) */}
@@ -76,7 +72,7 @@ export default function Hero() {
 
         {/* CRO: Trust signals with specific proof */}
         <p className="mt-4 text-base sm:text-lg text-gray-700 font-medium">
-          Free 30-minute call + custom AI roadmap. No charge while I prove this works.
+          Free 30-minute call + custom AI roadmap.
         </p>
         <p className="mt-2 text-sm sm:text-base text-gray-600">
           🔒 No commitment. No pressure. Just honest conversation about what you need.

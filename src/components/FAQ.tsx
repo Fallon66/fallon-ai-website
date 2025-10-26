@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
-import BookingModal from './BookingModal';
 
 interface FAQItem {
   question: string;
@@ -9,7 +8,6 @@ interface FAQItem {
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const faqs: FAQItem[] = [
     {
@@ -110,21 +108,8 @@ export default function FAQ() {
             animation: slideDown 0.3s ease-out;
           }
         `}</style>
-
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 text-lg mb-6">
-            Still have questions? Let's talk.
-          </p>
-          <button
-            onClick={() => setIsBookingOpen(true)}
-            className="bg-fallon-teal text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all hover:shadow-2xl hover:scale-105 transform"
-          >
-            Book Discovery Call
-          </button>
-        </div>
       </div>
 
-      <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </section>
   );
 }
