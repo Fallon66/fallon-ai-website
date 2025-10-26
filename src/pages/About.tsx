@@ -49,16 +49,14 @@ export default function About() {
               </div>
             </div>
 
-            {/* Charlotte's Photo Placeholder */}
+            {/* Charlotte's Photo */}
             <div className="order-first md:order-last">
-              <div className="relative aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 shadow-2xl">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-8xl mb-4">🐙</div>
-                    <p className="text-gray-600 font-semibold">Charlotte's Photo</p>
-                    <p className="text-sm text-gray-500">Placeholder</p>
-                  </div>
-                </div>
+              <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="/images/charlotte.jpg"
+                  alt="Charlotte Fallon - AI Strategist & Systems Builder"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -117,13 +115,12 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {/* Blue */}
             <div className="group">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-teal/20 to-fallon-lavender/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🐕</div>
-                    <p className="text-xs text-gray-500">Photo placeholder</p>
-                  </div>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <img
+                  src="/images/blue.jpg"
+                  alt="Blue - Chief Nap Officer"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Blue</h3>
               <p className="text-sm text-fallon-coral font-semibold text-center">Chief Nap Officer</p>
@@ -131,13 +128,12 @@ export default function About() {
 
             {/* Stan */}
             <div className="group">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-coral/20 to-fallon-teal/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🐕</div>
-                    <p className="text-xs text-gray-500">Photo placeholder</p>
-                  </div>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <img
+                  src="/images/stan.jpg"
+                  alt="Stan - Chief Fireside Officer"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Stan</h3>
               <p className="text-sm text-fallon-lavender font-semibold text-center">Chief Fireside Officer</p>
@@ -145,13 +141,12 @@ export default function About() {
 
             {/* Billy */}
             <div className="group">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-lavender/20 to-fallon-coral/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🐕</div>
-                    <p className="text-xs text-gray-500">Photo placeholder</p>
-                  </div>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <img
+                  src="/images/billy.jpg"
+                  alt="Billy - Senior Advisor, Treats Division"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Billy</h3>
               <p className="text-sm text-fallon-teal font-semibold text-center">Senior Advisor, Treats Division</p>
@@ -159,13 +154,12 @@ export default function About() {
 
             {/* Piper */}
             <div className="group">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🐕</div>
-                    <p className="text-xs text-gray-500">Photo placeholder</p>
-                  </div>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <img
+                  src="/images/piper.jpg"
+                  alt="Piper - Head of Security & Squirrel Patrol"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Piper</h3>
               <p className="text-sm text-fallon-lavender font-semibold text-center">Head of Security & Squirrel Patrol</p>
@@ -173,13 +167,12 @@ export default function About() {
 
             {/* Lyla */}
             <div className="group">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-coral/20 to-fallon-lavender/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">🐕</div>
-                    <p className="text-xs text-gray-500">Photo placeholder</p>
-                  </div>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <img
+                  src="/images/lyla.jpg"
+                  alt="Lyla - Director of Chaos Management"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Lyla</h3>
               <p className="text-sm text-fallon-coral font-semibold text-center">Director of Chaos Management</p>
