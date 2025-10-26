@@ -106,7 +106,7 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group relative bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-transparent transition-all duration-500 overflow-hidden"
+                className="group relative bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-transparent transition-all duration-500 overflow-hidden h-full flex flex-col"
                 style={{
                   boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
                 }}
@@ -125,7 +125,7 @@ export default function Services() {
                 {/* Animated corner accent */}
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500 transform translate-x-16 -translate-y-16 group-hover:translate-x-8 group-hover:-translate-y-8`}></div>
 
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col flex-1">
                   {/* Badge */}
                   {service.badge && (
                     <div className={`inline-block ${service.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full mb-4`}>
@@ -146,7 +146,7 @@ export default function Services() {
                     {service.subtitle}
                   </p>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-1">
                     {service.description}
                   </p>
 
