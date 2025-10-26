@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-fallon-lavender/5 via-white to-fallon-teal/5">
+    <div className="min-h-screen bg-white">
       {/* Person Schema for Charlotte */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
         "@context": "https://schema.org",
@@ -24,37 +24,60 @@ export default function About() {
         ]
       })}} />
 
-      {/* Hero Hook */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="text-6xl mb-6">🐙</div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm Charlotte
-          </h1>
-          <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
-            ADHD, autistic, dyslexic. 8-figure e-commerce co-founder (exited 2020). Fractional CMO/COO. AI since 2015.
-            <br />
-            <span className="text-fallon-teal font-semibold">I built AI systems to survive my own chaos.</span>
-            <br />
-            <span className="text-gray-900">Now I build them for overwhelmed founders and businesses. UK-based, serving worldwide.</span>
-          </p>
+      {/* Hero Section with Charlotte's Photo */}
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/5 to-fallon-teal/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Text Content */}
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Hi, I'm Charlotte
+              </h1>
+              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p className="text-xl font-semibold text-fallon-teal">
+                  ADHD, autistic, dyslexic. I built AI systems to survive my own chaos.
+                </p>
+                <p>
+                  8-figure e-commerce co-founder (exited 2020). Fractional CMO/COO. AI since 2015.
+                </p>
+                <p className="text-gray-900 font-semibold">
+                  Now I build them for overwhelmed founders and businesses drowning in repetitive tasks.
+                </p>
+                <p className="text-sm text-gray-600">
+                  UK-based, serving worldwide
+                </p>
+              </div>
+            </div>
+
+            {/* Charlotte's Photo Placeholder */}
+            <div className="order-first md:order-last">
+              <div className="relative aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 shadow-2xl">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-8xl mb-4">🐙</div>
+                    <p className="text-gray-600 font-semibold">Charlotte's Photo</p>
+                    <p className="text-sm text-gray-500">Placeholder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Why Octopus? */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/10 to-fallon-coral/10">
+      {/* Why Octopus */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-8xl mb-4">🐙</div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Why an Octopus?
             </h2>
           </div>
 
-          <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-lg">
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-              <p>
-                Octopuses have <strong>9 brains.</strong> One central brain, and one in each arm.
+          <div className="bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10 rounded-3xl p-8 md:p-12">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+              <p className="text-xl font-semibold text-gray-900">
+                Octopuses have 9 brains. One central brain, and one in each arm.
               </p>
 
               <p>
@@ -62,7 +85,7 @@ export default function About() {
                 They're alien intelligence on Earth.
               </p>
 
-              <p className="text-fallon-teal font-semibold">
+              <p className="text-fallon-teal font-semibold text-xl">
                 Sound familiar to anyone juggling 17 things at once?
               </p>
 
@@ -71,94 +94,111 @@ export default function About() {
                 Dyslexia taught me to think sideways.
               </p>
 
-              <p>
-                I don't think in straight lines. And I don't build AI systems in straight lines either.
-              </p>
-
               <p className="text-gray-900 font-semibold">
-                The octopus is my spirit animal. Alien intelligence. Multitasking mastery. Neurodivergent AF.
+                I don't think in straight lines. And I don't build AI systems in straight lines either.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Meet the Dogs */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Meet the Quality Control Team
-          </h2>
+      {/* Meet the Quality Control Team */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-fallon-lavender/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Meet the Quality Control Team
+            </h2>
+            <p className="text-xl text-gray-600">
+              The real bosses around here
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {/* Blue */}
-            <div className="bg-gradient-to-br from-fallon-teal/20 to-fallon-lavender/20 rounded-2xl p-6 shadow-lg">
-              <div className="text-5xl mb-3">🐕</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Blue</h3>
-              <p className="text-sm text-fallon-coral font-semibold mb-3">Chief Nap Officer</p>
-              <p className="text-gray-700">
-                Blue's job is simple: if Charlotte works too long, demand cuddles.
-                Work-life balance enforcer. Professional couch warmer.
-              </p>
+            <div className="group">
+              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-teal/20 to-fallon-lavender/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🐕</div>
+                    <p className="text-xs text-gray-500">Photo placeholder</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Blue</h3>
+              <p className="text-sm text-fallon-coral font-semibold text-center">Chief Nap Officer</p>
             </div>
 
             {/* Stan */}
-            <div className="bg-gradient-to-br from-fallon-coral/20 to-fallon-teal/20 rounded-2xl p-6 shadow-lg">
-              <div className="text-5xl mb-3">🐕</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Stan</h3>
-              <p className="text-sm text-fallon-lavender font-semibold mb-3">Italian Greyhound, Anxiety Specialist</p>
-              <p className="text-gray-700">
-                Stan understands overwhelm. He also tests all the hypoallergenic dog food.
-                Sensitive stomach = food researcher extraordinaire.
-              </p>
+            <div className="group">
+              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-coral/20 to-fallon-teal/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🐕</div>
+                    <p className="text-xs text-gray-500">Photo placeholder</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Stan</h3>
+              <p className="text-sm text-fallon-lavender font-semibold text-center">Chief Fireside Officer</p>
             </div>
 
             {/* Billy */}
-            <div className="bg-gradient-to-br from-fallon-lavender/20 to-fallon-coral/20 rounded-2xl p-6 shadow-lg">
-              <div className="text-5xl mb-3">🐕</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Billy</h3>
-              <p className="text-sm text-fallon-teal font-semibold mb-3">Senior Advisor, Treats Division</p>
-              <p className="text-gray-700">
-                Billy knows what he wants and when he wants it. No nonsense. Direct communicator.
-                Teaches me clarity.
-              </p>
+            <div className="group">
+              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-lavender/20 to-fallon-coral/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🐕</div>
+                    <p className="text-xs text-gray-500">Photo placeholder</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Billy</h3>
+              <p className="text-sm text-fallon-teal font-semibold text-center">Senior Advisor, Treats Division</p>
             </div>
 
             {/* Piper */}
-            <div className="bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 rounded-2xl p-6 shadow-lg">
-              <div className="text-5xl mb-3">🐕</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Piper</h3>
-              <p className="text-sm text-fallon-lavender font-semibold mb-3">Director of Chaos Management</p>
-              <p className="text-gray-700">
-                Piper spots problems before they happen. Always alert. Never off duty.
-                The vigilance I wish my brain had.
-              </p>
+            <div className="group">
+              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🐕</div>
+                    <p className="text-xs text-gray-500">Photo placeholder</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Piper</h3>
+              <p className="text-sm text-fallon-lavender font-semibold text-center">Head of Security & Squirrel Patrol</p>
             </div>
 
             {/* Lyla */}
-            <div className="bg-gradient-to-br from-fallon-coral/20 to-fallon-lavender/20 rounded-2xl p-6 shadow-lg">
-              <div className="text-5xl mb-3">🐕</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Lyla</h3>
-              <p className="text-sm text-fallon-coral font-semibold mb-3">Head of Security & Squirrel Patrol</p>
-              <p className="text-gray-700">
-                Lyla brings the energy. Boundless enthusiasm. Reminds me that chaos isn't always bad—
-                sometimes it's just creativity waiting to happen.
-              </p>
+            <div className="group">
+              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-fallon-coral/20 to-fallon-lavender/20 shadow-lg mb-4 hover:shadow-2xl transition-shadow">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl mb-2">🐕</div>
+                    <p className="text-xs text-gray-500">Photo placeholder</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Lyla</h3>
+              <p className="text-sm text-fallon-coral font-semibold text-center">Director of Chaos Management</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Guinea Pig Methodology */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-coral/10 to-fallon-lavender/10">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-coral/10 to-fallon-lavender/10">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-lg">
-            <div className="text-6xl mb-6 text-center">🧪</div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               The Guinea Pig Methodology
             </h2>
+          </div>
 
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+          <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-lg">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p className="text-xl font-semibold text-fallon-teal">
                 I don't sell systems I haven't tested on myself first.
               </p>
@@ -183,26 +223,22 @@ export default function About() {
                 That's why I test everything on myself first—then offer it as paid services
                 only when I know it actually works. No untested promises.
               </p>
-
-              <p>
-                Because I'd rather give you something that actually transforms your workflow than
-                charge you for something pretty that doesn't.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Building in Public */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 rounded-3xl p-8 md:p-12 shadow-lg">
-            <div className="text-6xl mb-6 text-center">📖</div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Building in Public
             </h2>
+          </div>
 
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+          <div className="bg-gradient-to-br from-fallon-teal/10 to-fallon-coral/10 rounded-3xl p-8 md:p-12">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
                 I document everything. And I mean <em>everything.</em>
               </p>
@@ -226,23 +262,18 @@ export default function About() {
               </p>
 
               <div className="mt-8 text-center">
-                <p className="text-gray-700 mb-4">Follow the journey:</p>
+                <p className="text-gray-700 mb-4 font-semibold">Follow the journey:</p>
                 <div className="flex gap-6 justify-center">
-                  <a
-                    href="https://linkedin.com/in/charlotte-fallon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-fallon-teal hover:text-fallon-coral font-semibold transition-colors"
-                  >
-                    📖 LinkedIn
-                  </a>
+                  <span className="text-gray-600">
+                    LinkedIn
+                  </span>
                   <a
                     href="https://github.com/Fallon66"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-fallon-teal hover:text-fallon-coral font-semibold transition-colors"
                   >
-                    💻 GitHub
+                    GitHub
                   </a>
                 </div>
               </div>
@@ -252,14 +283,14 @@ export default function About() {
       </section>
 
       {/* Early AI Journey */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
               I've Been Doing AI Since Before It Was Cool
             </h2>
 
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
                 <strong className="text-fallon-coral">2015.</strong> That's when I started using AI.
               </p>
@@ -288,7 +319,6 @@ export default function About() {
       {/* CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="text-7xl mb-6">🐙</div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Want to See What AI Can Do for Your Chaos?
           </h2>
