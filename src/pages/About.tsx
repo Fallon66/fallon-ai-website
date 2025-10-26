@@ -32,54 +32,12 @@ export default function About() {
             Hi, I'm Charlotte
           </h1>
           <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
-            Former therapist. Built an 8-figure e-commerce business. Bootstrapped it. Exited it.
+            ADHD, autistic, dyslexic. 8-figure e-commerce co-founder (exited 2020). Fractional CMO/COO. AI since 2015.
             <br />
-            <span className="text-fallon-teal font-semibold">Now I build AI systems for neurodivergent brains like mine.</span>
+            <span className="text-fallon-teal font-semibold">I built AI systems to survive my own chaos.</span>
+            <br />
+            <span className="text-gray-900">Now I build them for overwhelmed founders and businesses. UK-based, serving worldwide.</span>
           </p>
-        </div>
-      </section>
-
-      {/* Transformation Story */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              The Email Mountain (And How I Climbed It)
-            </h2>
-
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-              <p>
-                <strong className="text-fallon-coral">20,000 emails.</strong>
-              </p>
-
-              <p>
-                That's how many were sitting in my inbox. Not a typo. Twenty. Thousand.
-              </p>
-
-              <p>
-                I'm ADHD, autistic, and dyslexic. Email is my kryptonite. Every message felt urgent.
-                Every notification pulled me in 17 directions. I'd spend hours drowning in my inbox
-                and still have nothing done.
-              </p>
-
-              <p className="text-2xl font-bold text-fallon-teal">
-                Then I built an AI system to do it for me.
-              </p>
-
-              <p>
-                5 days later: <strong>1 email left.</strong>
-              </p>
-
-              <p>
-                99.5% reduction. Not by "being more organized" or "using a better system."
-                By automating the entire thing with AI.
-              </p>
-
-              <p className="text-gray-900 font-semibold">
-                That's when I realized: if AI can save me from email hell, what else could it do?
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -105,7 +63,7 @@ export default function About() {
               </p>
 
               <p className="text-fallon-teal font-semibold">
-                Sound familiar, neurodivergent friends?
+                Sound familiar to anyone juggling 17 things at once?
               </p>
 
               <p>
@@ -114,7 +72,7 @@ export default function About() {
               </p>
 
               <p>
-                I don't think like neurotypical people. And I don't build AI systems like them either.
+                I don't think in straight lines. And I don't build AI systems in straight lines either.
               </p>
 
               <p className="text-gray-900 font-semibold">
@@ -170,7 +128,7 @@ export default function About() {
             <div className="bg-gradient-to-br from-fallon-teal/20 to-fallon-coral/20 rounded-2xl p-6 shadow-lg">
               <div className="text-5xl mb-3">🐕</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Piper</h3>
-              <p className="text-sm text-fallon-lavender font-semibold mb-3">Head of Security & Squirrel Patrol</p>
+              <p className="text-sm text-fallon-lavender font-semibold mb-3">Director of Chaos Management</p>
               <p className="text-gray-700">
                 Piper spots problems before they happen. Always alert. Never off duty.
                 The vigilance I wish my brain had.
@@ -181,21 +139,10 @@ export default function About() {
             <div className="bg-gradient-to-br from-fallon-coral/20 to-fallon-lavender/20 rounded-2xl p-6 shadow-lg">
               <div className="text-5xl mb-3">🐕</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Lyla</h3>
-              <p className="text-sm text-fallon-coral font-semibold mb-3">Director of Chaos Management</p>
+              <p className="text-sm text-fallon-coral font-semibold mb-3">Head of Security & Squirrel Patrol</p>
               <p className="text-gray-700">
                 Lyla brings the energy. Boundless enthusiasm. Reminds me that chaos isn't always bad—
                 sometimes it's just creativity waiting to happen.
-              </p>
-            </div>
-
-            {/* All 5 */}
-            <div className="bg-gradient-to-br from-fallon-lavender/20 to-fallon-teal/20 rounded-2xl p-6 shadow-lg">
-              <div className="text-5xl mb-3">🛏️</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">The Squad</h3>
-              <p className="text-sm text-fallon-teal font-semibold mb-3">Eco Bed Testing Department</p>
-              <p className="text-gray-700">
-                All 5 test my partner's ePAW eco dog beds. If they approve, you know it's quality.
-                Toughest critics in the business.
               </p>
             </div>
           </div>
@@ -229,12 +176,12 @@ export default function About() {
               </p>
 
               <p className="text-gray-900 font-semibold">
-                I'm the guinea pig. If it survives my ADHD brain, it'll work for yours.
+                I'm the guinea pig. If it works for my neurodivergent brain, it'll work for anyone drowning in repetitive tasks.
               </p>
 
               <p>
-                That's why I'm running <strong className="text-fallon-coral">10 free pilot programs</strong> right now.
-                Not selling. Testing. Building. Proving it works.
+                That's why I test everything on myself first—then offer it as paid services
+                only when I know it actually works. No untested promises.
               </p>
 
               <p>
@@ -271,12 +218,34 @@ export default function About() {
 
               <p>
                 I'm not here to be a guru. I'm here to build systems that work, share what I learn,
-                and help people with brains like mine stop drowning in chaos.
+                and help overwhelmed founders and businesses stop drowning in chaos.
               </p>
 
               <p className="text-2xl font-bold text-gray-900 text-center mt-8">
                 That's the octopus way. 🐙
               </p>
+
+              <div className="mt-8 text-center">
+                <p className="text-gray-700 mb-4">Follow the journey:</p>
+                <div className="flex gap-6 justify-center">
+                  <a
+                    href="https://linkedin.com/in/charlotte-fallon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-fallon-teal hover:text-fallon-coral font-semibold transition-colors"
+                  >
+                    📖 LinkedIn
+                  </a>
+                  <a
+                    href="https://github.com/Fallon66"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-fallon-teal hover:text-fallon-coral font-semibold transition-colors"
+                  >
+                    💻 GitHub
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -304,10 +273,6 @@ export default function About() {
               </p>
 
               <p>
-                Now? I'm in the <strong className="text-fallon-teal">top 5% of AI users globally.</strong>
-              </p>
-
-              <p>
                 MCP servers. Vector databases. Advanced automation. Claude Code mastery.
                 I don't just use AI—I build systems with it.
               </p>
@@ -328,8 +293,7 @@ export default function About() {
             Want to See What AI Can Do for Your Chaos?
           </h2>
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-            I'm running 10 free pilot programs. Testing systems. Building in public.
-            No charge. Just proving this works.
+            Free 30-minute discovery call. No pressure. Just see if AI can solve your chaos.
           </p>
           <a
             href="https://forms.gle/bzZKhWNCaG8xsL768"
@@ -337,11 +301,8 @@ export default function About() {
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-fallon-teal to-fallon-coral rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300"
           >
-            Join the Waitlist
+            Book Discovery Call
           </a>
-          <p className="text-sm text-gray-500 mt-6">
-            Pilots are full right now, but I'll let you know when spots open up.
-          </p>
         </div>
       </section>
     </div>

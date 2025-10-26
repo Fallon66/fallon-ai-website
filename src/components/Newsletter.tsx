@@ -7,7 +7,7 @@ export default function Newsletter() {
             Want In? Join the Waitlist
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Testing 10 free pilots right now. When the next round opens, you'll be first to know. Plus weekly AI tips that don't suck.
+            Get on the list for Templates, Academy launch, and weekly AI tips that don't suck. No fluff, just what works.
           </p>
         </div>
 

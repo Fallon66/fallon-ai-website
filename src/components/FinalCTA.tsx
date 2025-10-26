@@ -21,7 +21,7 @@ export default function FinalCTA() {
         </h2>
 
         <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 sm:mb-10 leading-relaxed" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
-          <span className="font-bold">One call.</span> <span className="font-bold">One week.</span> <span className="font-bold text-xl sm:text-2xl md:text-3xl">Complete transformation.</span>
+          <span className="font-bold">One call.</span> <span className="font-bold">30 minutes.</span> <span className="font-bold text-xl sm:text-2xl md:text-3xl">See what's possible.</span>
         </p>
 
         <button

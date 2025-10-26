@@ -58,12 +58,12 @@ export default function Navigation() {
             >
               About
             </Link>
-            <Link
+            {/* <Link
               to="/blog"
               className="text-xl text-gray-900 hover:text-fallon-teal transition-colors font-bold"
             >
               Blog
-            </Link>
+            </Link> */}
             <button
               onClick={() => setIsBookingOpen(true)}
               className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-10 py-3.5 rounded-lg text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
@@ -121,13 +121,13 @@ export default function Navigation() {
             >
               About
             </Link>
-            <Link
+            {/* <Link
               to="/blog"
               onClick={() => setIsMenuOpen(false)}
               className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
             >
               Blog
-            </Link>
+            </Link> */}
             <button
               onClick={() => {
                 setIsBookingOpen(true);

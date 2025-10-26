@@ -6,19 +6,19 @@ export default function HowWeWork() {
       icon: Phone,
       number: '1',
       title: '30-Minute Discovery Call',
-      description: 'Free 30-60 minute chat about your biggest time-drains and what AI can solve.',
+      description: 'Free call to map your biggest time-drains and see if AI can help.',
     },
     {
       icon: Map,
       number: '2',
-      title: 'Custom Solution',
-      description: 'Your personalized AI roadmap. No fluff, just what you actually need.',
+      title: 'Choose Your Path',
+      description: 'Get a strategy roadmap to DIY, or let us build it with you. Your call.',
     },
     {
       icon: Rocket,
       number: '3',
-      title: 'Launch',
-      description: 'Fast transformation. We build it, test it, and teach you to use it.',
+      title: 'Get Results',
+      description: 'Walk away with a clear plan or a working AI system. Either way, you move forward.',
     },
   ];
 

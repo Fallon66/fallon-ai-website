@@ -6,21 +6,78 @@ export default function Services() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const services = [
+    // ROW 1: AVAILABLE NOW
+    {
+      icon: Mail,
+      emoji: '💬',
+      title: 'Free Discovery Call',
+      subtitle: '30 minutes to pick my brain about your chaos',
+      description: 'No roadmap. No pitch. Just an honest conversation about what AI could do for your specific workflow.',
+      color: 'from-fallon-teal to-fallon-lavender',
+      badge: null,
+      cta: 'Book Free Call',
+      ctaType: 'booking',
+    },
     {
       icon: Brain,
-      emoji: '🧠',
-      title: 'Personal Chaos → Clarity',
-      description: 'Email triage systems • ADHD-friendly automation • Custom productivity workflows',
-      color: 'from-fallon-teal to-fallon-lavender',
-      bgPattern: 'teal',
+      emoji: '🎯',
+      title: 'Strategy Deep Dive',
+      subtitle: 'Bespoke AI strategy for your business and budget',
+      description: 'Deep analysis of your workflows, challenges, and opportunities. Custom AI roadmap tailored to your team size, budget, and goals. Skip the waitlist—start today.',
+      color: 'from-fallon-lavender to-fallon-coral',
+      badge: 'AVAILABLE NOW',
+      badgeColor: 'bg-fallon-teal',
+      cta: 'Enquire',
+      ctaType: 'booking',
     },
     {
       icon: Zap,
-      emoji: '⚡',
-      title: 'Business Automation',
-      description: 'Lead generation systems • Content workflows • Team automation',
+      emoji: '🔥',
+      title: 'Full Custom Build',
+      subtitle: 'Hands-on AI systems built WITH you',
+      description: '1-6 week projects. Advanced automation. I build it with you, not for you. For businesses ready to invest in transformation.',
+      color: 'from-fallon-coral to-fallon-teal',
+      badge: 'PREMIUM',
+      badgeColor: 'bg-fallon-coral',
+      cta: 'Enquire',
+      ctaType: 'booking',
+    },
+    // ROW 2: COMING SOON / WAITLIST
+    {
+      icon: Briefcase,
+      emoji: '🗺️',
+      title: 'Quick Wins Pilot',
+      subtitle: 'SOLD OUT in 24 hours! Next batch TBA',
+      description: '1-hour discovery call + custom AI roadmap. Free while I test and refine. All 10 spots filled—join waitlist for next batch.',
+      color: 'from-fallon-teal to-fallon-lavender',
+      badge: 'SOLD OUT',
+      badgeColor: 'bg-gray-800',
+      cta: 'Join Waitlist',
+      ctaType: 'waitlist',
+    },
+    {
+      icon: Briefcase,
+      emoji: '📦',
+      title: 'AI Automation Templates',
+      subtitle: 'Pre-built systems you can install yourself',
+      description: 'Lead gen workflows • Email automation • Content systems • Video walkthroughs • Buy once, own forever',
       color: 'from-fallon-lavender to-fallon-coral',
-      bgPattern: 'lavender',
+      badge: 'COMING SOON',
+      badgeColor: 'bg-fallon-lavender',
+      cta: 'Join Waitlist',
+      ctaType: 'waitlist',
+    },
+    {
+      icon: Brain,
+      emoji: '🎓',
+      title: 'Group Academy',
+      subtitle: 'Learn with others in a 6-week cohort',
+      description: 'Live calls • Community support • Step-by-step system builds • Lifetime access to templates',
+      color: 'from-fallon-coral to-fallon-teal',
+      badge: 'COMING SOON',
+      badgeColor: 'bg-fallon-lavender',
+      cta: 'Join Waitlist',
+      ctaType: 'waitlist',
     },
   ];
 
@@ -36,20 +93,20 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
-            What I'm Testing <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent">(Free Pilots)</span>
+            How We Can <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent">Work Together</span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            All pilots are <span className="font-bold text-gray-900">FREE</span> while I refine the process. <span className="font-semibold text-gray-900">You get custom AI systems. I get real-world feedback. Win-win.</span>
+            From free discovery calls to full custom builds. <span className="font-semibold text-gray-900">Start where it makes sense for your budget and needs.</span>
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group relative bg-white rounded-3xl p-10 border-2 border-gray-100 hover:border-transparent transition-all duration-500 overflow-hidden"
+                className="group relative bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-transparent transition-all duration-500 overflow-hidden"
                 style={{
                   boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
                 }}
@@ -69,24 +126,49 @@ export default function Services() {
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500 transform translate-x-16 -translate-y-16 group-hover:translate-x-8 group-hover:-translate-y-8`}></div>
 
                 <div className="relative z-10">
+                  {/* Badge */}
+                  {service.badge && (
+                    <div className={`inline-block ${service.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full mb-4`}>
+                      {service.badge}
+                    </div>
+                  )}
+
                   {/* Icon Badge */}
-                  <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-20 h-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <Icon size={40} />
+                  <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <Icon size={32} />
                   </div>
 
-                  <h3 className="text-3xl font-bold text-gray-900 mb-4 group-hover:text-fallon-teal transition-colors">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-fallon-teal transition-colors">
                     {service.title}
                   </h3>
 
-                  <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  <p className="text-sm font-semibold text-gray-600 mb-3">
+                    {service.subtitle}
+                  </p>
+
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6">
                     {service.description}
                   </p>
 
-                  {/* Read more indicator */}
-                  <div className="flex items-center text-fallon-teal font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <span>Learn more</span>
-                    <ArrowRight size={20} className="ml-2 group-hover:translate-x-2 transition-transform" />
-                  </div>
+                  {/* CTA Button */}
+                  {service.ctaType === 'booking' ? (
+                    <button
+                      onClick={() => setIsBookingOpen(true)}
+                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
+                    >
+                      <span>{service.cta}</span>
+                      <ArrowRight size={16} />
+                    </button>
+                  ) : (
+                    <a
+                      href="https://forms.gle/bzZKhWNCaG8xsL768"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`block w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 text-center`}
+                    >
+                      {service.cta}
+                    </a>
+                  )}
                 </div>
               </div>
             );
@@ -99,22 +181,22 @@ export default function Services() {
 
           <div className="relative z-10">
             <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Want a <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">free AI system</span> built just for you?
+              Not sure where to start? <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">Book a free call.</span>
             </p>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              All pilots are FREE while I prove this works. You get custom automation. I get feedback. Win-win.
+              30 minutes to pick my brain. No pitch. Just honest conversation about what AI could actually do for your workflow.
             </p>
 
             <button
               onClick={() => setIsBookingOpen(true)}
               className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle inline-flex items-center space-x-3"
             >
-              <span>Join Free Pilot Program (10 Slots)</span>
+              <span>Book Free Discovery Call</span>
               <ArrowRight size={24} />
             </button>
 
             <p className="mt-6 text-gray-600">
-              🔒 Free 1-hour call + custom roadmap • No charge, no catch
+              🔒 No charge. No catch. Just 30 minutes of honest conversation.
             </p>
           </div>
         </div>

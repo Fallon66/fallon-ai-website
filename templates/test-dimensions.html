@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            width: 1200px;
+            height: 1200px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1200px;
+            height: 1200px;
+            background: linear-gradient(135deg, #7DD3C0 0%, #FFB4A2 100%);
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="position: absolute; top: 20px; left: 20px; color: white; font-size: 24px;">
+            TOP LEFT
+        </div>
+        <div style="position: absolute; bottom: 20px; right: 20px; color: white; font-size: 24px;">
+            BOTTOM RIGHT
+        </div>
+    </div>
+</body>
+</html>
