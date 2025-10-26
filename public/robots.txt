@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fallon-ai-website.vercel.app/sitemap.xml
+
+# Block dev/admin routes (if any exist)
+Disallow: /admin
+Disallow: /.git
+Disallow: /api

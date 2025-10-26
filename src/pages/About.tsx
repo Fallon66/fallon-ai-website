@@ -1,6 +1,29 @@
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-fallon-lavender/5 via-white to-fallon-teal/5">
+      {/* Person Schema for Charlotte */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Charlotte Fallon Smith",
+        "alternateName": "Charlotte Fallon",
+        "jobTitle": "AI Strategist & Systems Builder",
+        "description": "8-figure e-commerce co-founder (exited 2020). Fractional CMO/COO. Neurodivergent founder (ADHD, autistic, dyslexic) building custom AI systems for overwhelmed businesses.",
+        "url": "https://fallon-ai-website.vercel.app/about",
+        "sameAs": [
+          "https://www.linkedin.com/in/charlotte-fallon",
+          "https://github.com/Fallon66"
+        ],
+        "knowsAbout": [
+          "AI Automation",
+          "Custom AI Systems",
+          "E-Commerce Strategy",
+          "Fractional CMO Services",
+          "Neurodivergent Business Strategy",
+          "Bootstrapped Business Growth"
+        ]
+      })}} />
+
       {/* Hero Hook */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
