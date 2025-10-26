@@ -157,12 +157,12 @@ export default function About() {
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
                 <img
                   src="/images/piper.jpg"
-                  alt="Piper - Head of Security & Squirrel Patrol"
+                  alt="Piper - Director of Chaos Management"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Piper</h3>
-              <p className="text-sm text-fallon-lavender font-semibold text-center">Head of Security & Squirrel Patrol</p>
+              <p className="text-sm text-fallon-lavender font-semibold text-center">Director of Chaos Management</p>
             </div>
 
             {/* Lyla */}
@@ -170,12 +170,12 @@ export default function About() {
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
                 <img
                   src="/images/lyla.jpg"
-                  alt="Lyla - Director of Chaos Management"
+                  alt="Lyla - Head of Security & Squirrel Patrol"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-1">Lyla</h3>
-              <p className="text-sm text-fallon-coral font-semibold text-center">Director of Chaos Management</p>
+              <p className="text-sm text-fallon-coral font-semibold text-center">Head of Security & Squirrel Patrol</p>
             </div>
           </div>
         </div>
