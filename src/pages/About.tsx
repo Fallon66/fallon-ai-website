@@ -30,16 +30,16 @@ export default function About() {
       })}} />
 
       {/* Hero Section with Charlotte's Photo */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/5 to-fallon-teal/5">
+      <section className="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/5 to-fallon-teal/5">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Text Content */}
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-[2.5rem] leading-tight sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Hi, I'm Charlotte
               </h1>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p className="text-xl font-semibold text-fallon-teal">
+              <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg sm:text-xl font-semibold text-fallon-teal">
                   ADHD, autistic, dyslexic. I built AI systems to survive my own chaos.
                 </p>
                 <p>
@@ -69,17 +69,17 @@ export default function About() {
       </section>
 
       {/* Why Octopus */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Why an Octopus?
             </h2>
           </div>
 
-          <div className="bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10 rounded-3xl p-8 md:p-12">
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-              <p className="text-xl font-semibold text-gray-900">
+          <div className="bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12">
+            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg sm:text-xl font-semibold text-gray-900">
                 Octopuses have 9 brains. One central brain, and one in each arm.
               </p>
 
@@ -88,7 +88,7 @@ export default function About() {
                 They're alien intelligence on Earth.
               </p>
 
-              <p className="text-fallon-teal font-semibold text-xl">
+              <p className="text-fallon-teal font-semibold text-lg sm:text-xl">
                 Sound familiar to anyone juggling 17 things at once?
               </p>
 
@@ -106,18 +106,18 @@ export default function About() {
       </section>
 
       {/* Meet the Quality Control Team */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-fallon-lavender/5">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-fallon-lavender/5">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Meet the Quality Control Team
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg sm:text-xl text-gray-600">
               The real bosses around here
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
             {/* Blue */}
             <div className="group">
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg mb-4 hover:shadow-2xl transition-shadow">
@@ -187,17 +187,17 @@ export default function About() {
       </section>
 
       {/* Guinea Pig Methodology */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-coral/10 to-fallon-lavender/10">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-coral/10 to-fallon-lavender/10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               The Guinea Pig Methodology
             </h2>
           </div>
 
-          <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-lg">
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-              <p className="text-xl font-semibold text-fallon-teal">
+          <div className="bg-white/80 backdrop-blur rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg">
+            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg sm:text-xl font-semibold text-fallon-teal">
                 I don't sell systems I haven't tested on myself first.
               </p>
 
@@ -227,16 +227,16 @@ export default function About() {
       </section>
 
       {/* Building in Public */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Building in Public
             </h2>
           </div>
 
-          <div className="bg-gradient-to-br from-fallon-teal/10 to-fallon-coral/10 rounded-3xl p-8 md:p-12">
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+          <div className="bg-gradient-to-br from-fallon-teal/10 to-fallon-coral/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12">
+            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
               <p>
                 I document everything. And I mean <em>everything.</em>
               </p>
@@ -255,7 +255,7 @@ export default function About() {
                 and help overwhelmed founders and businesses stop drowning in chaos.
               </p>
 
-              <p className="text-2xl font-bold text-gray-900 text-center mt-8">
+              <p className="text-xl sm:text-2xl font-bold text-gray-900 text-center mt-8">
                 That's the octopus way. 🐙
               </p>
 
@@ -281,14 +281,14 @@ export default function About() {
       </section>
 
       {/* Early AI Journey */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-fallon-lavender/10 to-fallon-teal/10">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+          <div className="bg-white/80 backdrop-blur rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg">
+            <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
               I've Been Doing AI Since Before It Was Cool
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
               <p>
                 <strong className="text-fallon-coral">2015.</strong> That's when I started using AI.
               </p>
@@ -315,17 +315,17 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Want to See What AI Can Do for Your Chaos?
           </h2>
-          <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
             Free 30-minute discovery call. No pressure. Just see if AI can solve your chaos.
           </p>
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-fallon-teal to-fallon-coral rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300"
+            className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-fallon-teal to-fallon-coral rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300 active:scale-95"
           >
             Book Discovery Call
           </button>

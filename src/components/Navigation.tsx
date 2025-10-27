@@ -20,7 +20,7 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50" style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-2 sm:py-3 md:py-4">
+        <div className="flex justify-between items-center py-3 sm:py-3 md:py-4">
           <Link to="/" className="cursor-pointer">
             <img src="/logo.png" alt="Fallon AI" className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto max-w-md" />
           </Link>
@@ -83,24 +83,24 @@ export default function Navigation() {
 
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
-          <div className="px-4 py-4 space-y-3">
+          <div className="px-4 py-5 space-y-3">
             {isHomePage ? (
               <>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
+                  className="block w-full text-left px-4 py-4 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold active:bg-opacity-20"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('how-it-works')}
-                  className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
+                  className="block w-full text-left px-4 py-4 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold active:bg-opacity-20"
                 >
                   How It Works
                 </button>
                 <button
                   onClick={() => scrollToSection('faq')}
-                  className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
+                  className="block w-full text-left px-4 py-4 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold active:bg-opacity-20"
                 >
                   FAQ
                 </button>
@@ -109,7 +109,7 @@ export default function Navigation() {
               <Link
                 to="/"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
+                className="block w-full text-left px-4 py-4 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold active:bg-opacity-20"
               >
                 Home
               </Link>
@@ -117,7 +117,7 @@ export default function Navigation() {
             <Link
               to="/about"
               onClick={() => setIsMenuOpen(false)}
-              className="block w-full text-left px-4 py-3 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold"
+              className="block w-full text-left px-4 py-4 text-lg text-gray-700 hover:bg-fallon-teal hover:bg-opacity-10 rounded-lg transition-colors font-semibold active:bg-opacity-20"
             >
               About
             </Link>
@@ -133,7 +133,7 @@ export default function Navigation() {
                 setIsBookingOpen(true);
                 setIsMenuOpen(false);
               }}
-              className="w-full bg-gradient-to-r from-fallon-teal to-fallon-coral text-white px-6 py-3 rounded-lg text-lg font-bold hover:shadow-2xl transition-all duration-300"
+              className="w-full bg-gradient-to-r from-fallon-teal to-fallon-coral text-white px-6 py-4 rounded-lg text-lg font-bold hover:shadow-2xl transition-all duration-300 active:scale-95"
             >
               Book Discovery Call
             </button>

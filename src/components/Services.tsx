@@ -96,9 +96,9 @@ export default function Services() {
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-fallon-lavender/20 rounded-full blur-3xl animate-float-delayed"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
+          <h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
             How We Can <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent">Work Together</span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
@@ -106,13 +106,13 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group relative bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-transparent transition-all duration-500 overflow-hidden h-full flex flex-col"
+                className="group relative bg-white rounded-3xl p-6 sm:p-8 border-2 border-gray-100 hover:border-transparent transition-all duration-500 overflow-hidden h-full flex flex-col"
                 style={{
                   boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
                 }}
@@ -142,19 +142,19 @@ export default function Services() {
                   </div>
 
                   {/* Icon Badge */}
-                  <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <Icon size={32} />
+                  <div className={`inline-block bg-gradient-to-br ${service.color} text-white w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <Icon size={28} className="sm:w-8 sm:h-8" />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-fallon-teal transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 group-hover:text-fallon-teal transition-colors">
                     {service.title}
                   </h3>
 
-                  <p className="text-sm font-semibold text-gray-600 mb-3">
+                  <p className="text-sm sm:text-base font-semibold text-gray-600 mb-3">
                     {service.subtitle}
                   </p>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-1">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6 flex-1">
                     {service.description}
                   </p>
 
@@ -162,10 +162,10 @@ export default function Services() {
                   {service.ctaType === 'booking' ? (
                     <button
                       onClick={() => setIsBookingOpen(true)}
-                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
+                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-4 rounded-lg text-base sm:text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 active:scale-95`}
                     >
                       <span>{service.cta}</span>
-                      <ArrowRight size={16} />
+                      <ArrowRight size={18} className="flex-shrink-0" />
                     </button>
                   ) : service.ctaType === 'contact' ? (
                     <button
@@ -173,10 +173,10 @@ export default function Services() {
                         setSelectedService(service.title);
                         setIsContactOpen(true);
                       }}
-                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
+                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-4 rounded-lg text-base sm:text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 active:scale-95`}
                     >
                       <span>{service.cta}</span>
-                      <ArrowRight size={16} />
+                      <ArrowRight size={18} className="flex-shrink-0" />
                     </button>
                   ) : (
                     <button
@@ -184,10 +184,10 @@ export default function Services() {
                         setSelectedWaitlistService(service.title);
                         setIsWaitlistOpen(true);
                       }}
-                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
+                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-4 rounded-lg text-base sm:text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 active:scale-95`}
                     >
                       <span>{service.cta}</span>
-                      <ArrowRight size={16} />
+                      <ArrowRight size={18} className="flex-shrink-0" />
                     </button>
                   )}
                 </div>
@@ -197,26 +197,26 @@ export default function Services() {
         </div>
 
         {/* CTA Section */}
-        <div className="relative bg-gradient-to-br from-fallon-teal/10 via-fallon-lavender/10 to-fallon-coral/10 rounded-3xl p-12 text-center border-2 border-gray-100 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-fallon-teal/10 via-fallon-lavender/10 to-fallon-coral/10 rounded-3xl p-8 sm:p-12 text-center border-2 border-gray-100 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-fallon-teal/5 to-fallon-coral/5 animate-gradient"></div>
 
           <div className="relative z-10">
-            <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <p className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 px-2">
               Not sure where to start? <span className="bg-gradient-to-r from-fallon-teal to-fallon-lavender bg-clip-text text-transparent">Book a free call.</span>
             </p>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto px-4">
               30 minutes to pick my brain. No pitch. Just honest conversation about what AI could actually do for your workflow.
             </p>
 
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-12 py-5 rounded-xl text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle inline-flex items-center space-x-3"
+              className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 sm:px-12 py-5 rounded-xl text-lg sm:text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle inline-flex items-center space-x-3 active:scale-95"
             >
               <span>Book Free Discovery Call</span>
               <ArrowRight size={24} />
             </button>
 
-            <p className="mt-6 text-gray-600">
+            <p className="mt-6 text-sm sm:text-base text-gray-600 px-4">
               🔒 No charge. No catch. Just 30 minutes of honest conversation.
             </p>
           </div>

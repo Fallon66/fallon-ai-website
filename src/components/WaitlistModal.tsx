@@ -99,10 +99,10 @@ export default function WaitlistModal({ isOpen, onClose, serviceName = 'Waitlist
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-fallon-lavender via-fallon-coral to-fallon-teal p-4 sm:p-6 relative">
+        <div className="bg-gradient-to-r from-fallon-lavender via-fallon-coral to-fallon-teal p-5 sm:p-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-300 hover:scale-110"
+            className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-300 hover:scale-110 active:scale-95"
           >
             <X size={20} className="text-white sm:w-6 sm:h-6" />
           </button>
@@ -121,7 +121,7 @@ export default function WaitlistModal({ isOpen, onClose, serviceName = 'Waitlist
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-6">
+        <form onSubmit={handleSubmit} className="p-5 sm:p-6 md:p-8 space-y-6">
           {submitStatus === 'success' ? (
             <div className="text-center py-8">
               <div className="text-6xl mb-4">🎉</div>
@@ -148,7 +148,7 @@ export default function WaitlistModal({ isOpen, onClose, serviceName = 'Waitlist
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Jane Smith"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-fallon-lavender focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
+                  className="w-full px-4 py-4 rounded-lg border-2 border-gray-200 focus:border-fallon-lavender focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
                 />
               </div>
 
@@ -165,7 +165,7 @@ export default function WaitlistModal({ isOpen, onClose, serviceName = 'Waitlist
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="jane@example.com"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-fallon-lavender focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
+                  className="w-full px-4 py-4 rounded-lg border-2 border-gray-200 focus:border-fallon-lavender focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
                 />
               </div>
 
@@ -181,7 +181,7 @@ export default function WaitlistModal({ isOpen, onClose, serviceName = 'Waitlist
                   onChange={handleChange}
                   rows={3}
                   placeholder="Tell me what you're hoping to get from this..."
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-fallon-lavender focus:outline-none transition-colors text-gray-900 placeholder-gray-400 resize-none"
+                  className="w-full px-4 py-4 rounded-lg border-2 border-gray-200 focus:border-fallon-lavender focus:outline-none transition-colors text-gray-900 placeholder-gray-400 resize-none"
                 />
               </div>
 
@@ -216,8 +216,8 @@ export default function WaitlistModal({ isOpen, onClose, serviceName = 'Waitlist
         </form>
 
         {/* Footer */}
-        <div className="bg-gradient-to-r from-fallon-lavender/10 via-fallon-coral/10 to-fallon-teal/10 p-4 text-center border-t border-gray-100">
-          <p className="text-sm text-gray-600">
+        <div className="bg-gradient-to-r from-fallon-lavender/10 via-fallon-coral/10 to-fallon-teal/10 p-4 sm:p-5 text-center border-t border-gray-100">
+          <p className="text-sm sm:text-base text-gray-600">
             🔒 No spam. I'll only email you when this is ready to launch.
           </p>
         </div>

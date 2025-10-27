@@ -40,51 +40,49 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 text-center z-10">
+      <div className="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-20 sm:py-24 md:py-32 text-center z-10">
         {/* CRO: Outcome-focused headline with specific benefit */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+        <h1 className="text-[2.5rem] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-6 sm:mb-8">
           Get 5+ Hours Back <span className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral bg-clip-text text-transparent animate-gradient-text">Every Week</span>
         </h1>
 
         {/* CRO: Specific value proposition with clarity on what's different */}
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl text-gray-700 mb-10 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed px-2">
           Custom AI systems for overwhelmed founders and businesses drowning in repetitive tasks.
         </p>
 
         {/* CRO: Clear primary and secondary CTAs, mobile-optimized button sizes (min 44px height) */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center mb-8 max-w-2xl mx-auto">
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="w-full sm:w-auto bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-8 sm:px-12 py-5 sm:py-6 rounded-xl text-lg sm:text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle hover:from-fallon-teal/90 hover:to-fallon-lavender/90 active:scale-95"
-            style={{ minHeight: '56px' }}
+            className="w-full sm:flex-1 bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 sm:px-10 py-5 rounded-xl text-lg sm:text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300 animate-pulse-subtle hover:from-fallon-teal/90 hover:to-fallon-lavender/90 active:scale-95"
           >
-            Book Free 30-Min Discovery Call →
+            Book Free Discovery Call →
           </button>
 
           <a
             href="#newsletter"
-            className="w-full sm:w-auto border-2 border-fallon-teal text-fallon-teal px-8 sm:px-12 py-5 sm:py-6 rounded-xl text-lg sm:text-xl font-bold hover:bg-fallon-teal hover:text-white hover:shadow-lg transform transition-all duration-300 active:scale-95"
-            style={{ minHeight: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            className="w-full sm:flex-1 border-2 border-fallon-teal text-fallon-teal px-6 sm:px-10 py-5 rounded-xl text-lg sm:text-xl font-bold hover:bg-fallon-teal hover:text-white hover:shadow-lg transform transition-all duration-300 active:scale-95 flex items-center justify-center"
           >
-            Join Pilot Waitlist
+            Join Waitlist
           </a>
         </div>
 
         {/* CRO: Trust signals with specific proof */}
-        <p className="mt-4 text-base sm:text-lg text-gray-700 font-medium">
+        <p className="mt-4 text-lg sm:text-xl text-gray-700 font-medium px-4">
           Free 30-minute call + custom AI roadmap.
         </p>
-        <p className="mt-2 text-sm sm:text-base text-gray-600">
-          🔒 No commitment. No pressure. Just honest conversation about what you need.
+        <p className="mt-3 text-base sm:text-lg text-gray-600 px-4">
+          🔒 No commitment. No pressure. Just honest conversation.
         </p>
 
         {/* CRO: Social proof badge */}
-        <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-          <span className="inline-flex items-center gap-2 bg-white/50 px-4 py-2 rounded-full backdrop-blur-sm">
-            📈 Building in Public on LinkedIn
+        <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm sm:text-base text-gray-600 px-4">
+          <span className="inline-flex items-center gap-2 bg-white/50 px-4 py-2.5 rounded-full backdrop-blur-sm">
+            📈 Building in Public
           </span>
-          <span className="inline-flex items-center gap-2 bg-white/50 px-4 py-2 rounded-full backdrop-blur-sm">
-            ⭐ Open Source on GitHub
+          <span className="inline-flex items-center gap-2 bg-white/50 px-4 py-2.5 rounded-full backdrop-blur-sm">
+            ⭐ Open Source
           </span>
         </div>
       </div>

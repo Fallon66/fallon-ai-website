@@ -34,10 +34,10 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral p-3 sm:p-4 md:p-6 relative">
+        <div className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral p-4 sm:p-5 md:p-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 bg-white/20 hover:bg-white/30 rounded-full p-1.5 sm:p-2 transition-all duration-300 hover:scale-110"
+            className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-300 hover:scale-110 active:scale-95"
           >
             <X size={20} className="text-white sm:w-6 sm:h-6" />
           </button>
@@ -67,8 +67,8 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
         </div>
 
         {/* Footer */}
-        <div className="bg-gradient-to-r from-fallon-teal/10 via-fallon-lavender/10 to-fallon-coral/10 p-4 text-center border-t border-gray-100">
-          <p className="text-gray-600">
+        <div className="bg-gradient-to-r from-fallon-teal/10 via-fallon-lavender/10 to-fallon-coral/10 p-4 sm:p-5 text-center border-t border-gray-100">
+          <p className="text-sm sm:text-base text-gray-600">
             🔒 No commitment. No pressure. Just 30 minutes to see if we're a fit.
           </p>
         </div>

@@ -99,10 +99,10 @@ export default function ContactModal({ isOpen, onClose, serviceName = 'General E
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral p-4 sm:p-6 relative">
+        <div className="bg-gradient-to-r from-fallon-teal via-fallon-lavender to-fallon-coral p-5 sm:p-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-300 hover:scale-110"
+            className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-300 hover:scale-110 active:scale-95"
           >
             <X size={20} className="text-white sm:w-6 sm:h-6" />
           </button>
@@ -121,7 +121,7 @@ export default function ContactModal({ isOpen, onClose, serviceName = 'General E
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-6">
+        <form onSubmit={handleSubmit} className="p-5 sm:p-6 md:p-8 space-y-6">
           {submitStatus === 'success' ? (
             <div className="text-center py-8">
               <div className="text-6xl mb-4">✨</div>
@@ -145,7 +145,7 @@ export default function ContactModal({ isOpen, onClose, serviceName = 'General E
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Jane Smith"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-fallon-teal focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
+                  className="w-full px-4 py-4 rounded-lg border-2 border-gray-200 focus:border-fallon-teal focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
                 />
               </div>
 
@@ -162,7 +162,7 @@ export default function ContactModal({ isOpen, onClose, serviceName = 'General E
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="jane@example.com"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-fallon-teal focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
+                  className="w-full px-4 py-4 rounded-lg border-2 border-gray-200 focus:border-fallon-teal focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
                 />
               </div>
 
@@ -179,7 +179,7 @@ export default function ContactModal({ isOpen, onClose, serviceName = 'General E
                   onChange={handleChange}
                   rows={5}
                   placeholder="Tell me about your business and what you're looking to achieve with AI automation..."
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-fallon-teal focus:outline-none transition-colors text-gray-900 placeholder-gray-400 resize-none"
+                  className="w-full px-4 py-4 rounded-lg border-2 border-gray-200 focus:border-fallon-teal focus:outline-none transition-colors text-gray-900 placeholder-gray-400 resize-none"
                 />
               </div>
 
@@ -214,8 +214,8 @@ export default function ContactModal({ isOpen, onClose, serviceName = 'General E
         </form>
 
         {/* Footer */}
-        <div className="bg-gradient-to-r from-fallon-teal/10 via-fallon-lavender/10 to-fallon-coral/10 p-4 text-center border-t border-gray-100">
-          <p className="text-sm text-gray-600">
+        <div className="bg-gradient-to-r from-fallon-teal/10 via-fallon-lavender/10 to-fallon-coral/10 p-4 sm:p-5 text-center border-t border-gray-100">
+          <p className="text-sm sm:text-base text-gray-600">
             🔒 Your information is safe. I'll respond within 24-48 hours.
           </p>
         </div>
