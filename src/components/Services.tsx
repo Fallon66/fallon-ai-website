@@ -2,11 +2,14 @@ import { Mail, Briefcase, Zap, Brain, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import BookingModal from './BookingModal';
 import ContactModal from './ContactModal';
+import WaitlistModal from './WaitlistModal';
 
 export default function Services() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   const [selectedService, setSelectedService] = useState('');
+  const [selectedWaitlistService, setSelectedWaitlistService] = useState('');
 
   const services = [
     // ROW 1: AVAILABLE NOW
@@ -176,14 +179,16 @@ export default function Services() {
                       <ArrowRight size={16} />
                     </button>
                   ) : (
-                    <a
-                      href="https://forms.gle/bzZKhWNCaG8xsL768"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`block w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 text-center`}
+                    <button
+                      onClick={() => {
+                        setSelectedWaitlistService(service.title);
+                        setIsWaitlistOpen(true);
+                      }}
+                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
                     >
-                      {service.cta}
-                    </a>
+                      <span>{service.cta}</span>
+                      <ArrowRight size={16} />
+                    </button>
                   )}
                 </div>
               </div>
@@ -262,6 +267,11 @@ export default function Services() {
       isOpen={isContactOpen}
       onClose={() => setIsContactOpen(false)}
       serviceName={selectedService}
+    />
+    <WaitlistModal
+      isOpen={isWaitlistOpen}
+      onClose={() => setIsWaitlistOpen(false)}
+      serviceName={selectedWaitlistService}
     />
     </>
   );
