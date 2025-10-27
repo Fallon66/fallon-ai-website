@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import ScrollToTop from './components/ScrollToTop';
+import CookieConsent from './components/CookieConsent';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <CookieConsent />
       <Routes>
         <Route path="/quiz" element={<Quiz />} />
         <Route path="*" element={
