@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 interface ContactModalProps {
   isOpen: boolean;
   onClose: () => void;
+  serviceName?: string;
 }
 
-export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
+export default function ContactModal({ isOpen, onClose, serviceName = 'General Enquiry' }: ContactModalProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -49,8 +50,8 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
           name: formData.name,
           email: formData.email,
-          message: formData.message,
-          subject: `New enquiry from ${formData.name} - Fallon AI Website`,
+          message: `SERVICE ENQUIRY: ${serviceName}\n\n${formData.message}`,
+          subject: `${serviceName} Enquiry from ${formData.name} - Fallon AI`,
           from_name: 'Fallon AI Website',
           to_email: 'charlotte@fallonholdings.com',
         }),
@@ -110,7 +111,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div className="text-4xl sm:text-5xl">💬</div>
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-1">
-                Get In Touch
+                {serviceName}
               </h2>
               <p className="text-white/90 text-sm sm:text-base">
                 Can't find a time? Send me a message instead

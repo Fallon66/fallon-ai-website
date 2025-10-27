@@ -6,6 +6,7 @@ import ContactModal from './ContactModal';
 export default function Services() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState('');
 
   const services = [
     // ROW 1: AVAILABLE NOW
@@ -165,7 +166,10 @@ export default function Services() {
                     </button>
                   ) : service.ctaType === 'contact' ? (
                     <button
-                      onClick={() => setIsContactOpen(true)}
+                      onClick={() => {
+                        setSelectedService(service.title);
+                        setIsContactOpen(true);
+                      }}
                       className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
                     >
                       <span>{service.cta}</span>
@@ -254,7 +258,11 @@ export default function Services() {
     </section>
 
     <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-    <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+    <ContactModal
+      isOpen={isContactOpen}
+      onClose={() => setIsContactOpen(false)}
+      serviceName={selectedService}
+    />
     </>
   );
 }
