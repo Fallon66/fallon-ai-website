@@ -1,4 +1,9 @@
+import { useState } from 'react';
+import BookingModal from '../components/BookingModal';
+
 export default function About() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Person Schema for Charlotte */}
@@ -318,16 +323,16 @@ export default function About() {
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
             Free 30-minute discovery call. No pressure. Just see if AI can solve your chaos.
           </p>
-          <a
-            href="https://forms.gle/bzZKhWNCaG8xsL768"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setIsBookingOpen(true)}
             className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-fallon-teal to-fallon-coral rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300"
           >
             Book Discovery Call
-          </a>
+          </button>
         </div>
       </section>
+
+      <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </div>
   );
 }
