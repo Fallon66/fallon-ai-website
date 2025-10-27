@@ -1,9 +1,11 @@
 import { Mail, Briefcase, Zap, Brain, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import BookingModal from './BookingModal';
+import ContactModal from './ContactModal';
 
 export default function Services() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   const services = [
     // ROW 1: AVAILABLE NOW
@@ -28,7 +30,7 @@ export default function Services() {
       badge: 'AVAILABLE NOW',
       badgeColor: 'bg-fallon-teal',
       cta: 'Enquire',
-      ctaType: 'booking',
+      ctaType: 'contact',
     },
     {
       icon: Zap,
@@ -40,7 +42,7 @@ export default function Services() {
       badge: 'PREMIUM',
       badgeColor: 'bg-fallon-coral',
       cta: 'Enquire',
-      ctaType: 'booking',
+      ctaType: 'contact',
     },
     // ROW 2: COMING SOON / WAITLIST
     {
@@ -161,6 +163,14 @@ export default function Services() {
                       <span>{service.cta}</span>
                       <ArrowRight size={16} />
                     </button>
+                  ) : service.ctaType === 'contact' ? (
+                    <button
+                      onClick={() => setIsContactOpen(true)}
+                      className={`w-full bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg text-sm font-bold hover:shadow-lg hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2`}
+                    >
+                      <span>{service.cta}</span>
+                      <ArrowRight size={16} />
+                    </button>
                   ) : (
                     <a
                       href="https://forms.gle/bzZKhWNCaG8xsL768"
@@ -244,6 +254,7 @@ export default function Services() {
     </section>
 
     <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+    <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   );
 }
