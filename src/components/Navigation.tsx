@@ -66,7 +66,7 @@ export default function Navigation() {
             </Link> */}
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-10 py-3.5 rounded-lg text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
+              className="bg-gradient-to-r from-fallon-teal to-fallon-coral text-white px-10 py-3.5 rounded-lg text-xl font-bold hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
             >
               Book Discovery Call
             </button>
@@ -133,7 +133,7 @@ export default function Navigation() {
                 setIsBookingOpen(true);
                 setIsMenuOpen(false);
               }}
-              className="w-full bg-gradient-to-r from-fallon-teal to-fallon-lavender text-white px-6 py-3 rounded-lg text-lg font-bold hover:shadow-2xl transition-all duration-300"
+              className="w-full bg-gradient-to-r from-fallon-teal to-fallon-coral text-white px-6 py-3 rounded-lg text-lg font-bold hover:shadow-2xl transition-all duration-300"
             >
               Book Discovery Call
             </button>
